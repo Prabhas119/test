@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page1">
+  <!--  <audio autoplay loop>
+    <source src="audio/song2.mp3" type="audio/mpeg">
+</audio> -->
+
+<!-- 🎈 PASTE ANIMATION HERE -->
+<div class="balloons">
+    <span>💖</span>
+    <span>💜</span>
+    <span>💙</span>
+    <span>💗</span>
+    <span>💝</span>
+
+</div>
+
+<!-- Your main content -->
+<div class="card">
+    
+    <h1>👑🎉✨ <b>!!! Happy Birthday!!!</b> ✨🎉👑</h1>
+    <h3>peru mention cheyakunna,wish matram neeke "👑"</h3>
+    <p> There is something  just for you</p>
+    
+    <a href="page2.html">
+        <button>Tap to continue ➡️</button>
+    </a>
+        <h6>click somewhere on screen </h6>
+
+</div>
+<div class="confetti">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<audio id="bgMusic"  autoplay loop>
+    <source src="audio/song2.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function startMusicOnce() {
+    let music = document.getElementById("bgMusic");
+    music.play();
+
+    // Remove event after first click
+    document.removeEventListener("click", startMusicOnce);
+    document.removeEventListener("touchstart", startMusicOnce);
+}
+
+// Works for both mobile & desktop
+document.addEventListener("click", startMusicOnce);
+document.addEventListener("touchstart", startMusicOnce);
+</script>
+</body>
+</html>

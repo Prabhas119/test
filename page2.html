@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memories 💭</title>
+    <link rel="stylesheet" href="style.css">
+
+
+<style>
+body {
+    margin: 0;
+    height:100vh;
+    
+}
+
+/* Gallery Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(2,1fr);
+    gap: 10px;
+   /* flex:1;*/
+    width:95%;
+    margin: 10px auto;
+}
+
+.gallery img {
+    width: 50%;
+    height:60%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+/* Hover effect */
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Slight tilt effect */
+.gallery img:nth-child(odd) {
+    transform: rotate(-2deg);
+}
+
+.gallery img:nth-child(even) {
+    transform: rotate(2deg);
+}
+</style>
+
+</head>
+
+<body class="page2">
+
+<!-- Audio -->
+<audio autoplay loop>
+    <source src="audio/sadana.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Balloons -->
+<div class="balloons">
+    <span>💖</span>
+    <span>💜</span>
+    <span>💙</span>
+    <span>💗</span>
+    <span>💝</span>
+</div>
+
+<!-- Confetti -->
+<div class="confetti">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- Card -->
+<div class="card">
+    <h3> Sorry!!!!!!!💭</h3>
+    <p> Abaddam cheppinanduku......❤️</p>
+</div>
+
+<!-- Image Gallery -->
+<div class="gallery">
+    <figure>
+    <img src="images/gajubomma.jpeg" alt="me">
+    <figcaption>GAJU BOMMA 🥰</figcaption>
+    </figure>
+    <figure>
+    <img src="images/kalva.jpeg" alt="my">
+    <figcaption>Kaaluva pakkana❌</figcaption>
+    <figcaption>pakkana kaluva ✅😅</figcaption>
+    </figure>
+    <figure>
+    <img src="images/lappam.jpeg">
+    <figcaption>crop cheyaledhu</figcaption>
+    <figcaption>kani lappam matram...💯</figcaption>
+    </figure>
+    <figure>
+    <img src="images/brownhaiir.jpeg">
+    <figcaption>white hair ❌❌</figcaption>
+    <figcaption>brown hair✅✅</figcaption>
+    </figure>
+    <figure>
+    <img src="images/saree.jpeg">
+    <figcaption>just...👀....wow</figcaption>
+    <figcaption>just...👀....wow</figcaption>
+    </figure>
+    <figure>
+    <img src="images/suddapusani.png">
+    <figcapton>suudapusaniiii😇😇</figcapton>
+    </figure>
+</div>
+
+<!-- Buttons -->
+<div class="buttons">
+    <a href="index.html"><button>⬅ Back</button></a>
+    <a href="page3.html"><button>Next ➡️</button></a>
+    <h6>scroll</h6>
+</div>
+
+</body>
+</html>
