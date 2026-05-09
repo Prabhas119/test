@@ -20,7 +20,11 @@ body {
 }
 
 .card {
-    background: white;
+      background: linear-gradient(
+135deg,
+rgba(0,191,255,0.2),
+rgba(65,105,225,0.15)
+);
     padding: 30px;
     border-radius: 20px;
     display:inline-block;
